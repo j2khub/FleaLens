@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>플리렌즈 - 개인정보처리방침</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: #1a1a1a; line-height: 1.8; max-width: 720px; margin: 0 auto; padding: 40px 20px; }
+    h1 { font-size: 24px; margin-bottom: 8px; }
+    .subtitle { font-size: 14px; color: #666; margin-bottom: 40px; }
+    h2 { font-size: 18px; margin-top: 32px; margin-bottom: 12px; color: #ea580c; }
+    p, li { font-size: 15px; color: #333; }
+    p { margin-bottom: 12px; }
+    ul { padding-left: 20px; margin-bottom: 12px; }
+    li { margin-bottom: 6px; }
+    .highlight { background: #fff7ed; border-left: 3px solid #ea580c; padding: 12px 16px; border-radius: 4px; margin: 16px 0; }
+    .footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid #e5e5e5; font-size: 13px; color: #999; }
+  </style>
+</head>
+<body>
+
+<h1>플리렌즈 개인정보처리방침</h1>
+<p class="subtitle">시행일: 2026년 3월 18일 | 최종 수정: 2026년 3월 18일</p>
+
+<div class="highlight">
+  <strong>요약:</strong> 플리렌즈는 개인정보를 수집하지 않습니다. 모든 데이터는 사용자의 브라우저 내에서만 처리되며, 외부 서버로 전송되지 않습니다.
+</div>
+
+<h2>1. 서비스 개요</h2>
+<p>플리렌즈는 당근마켓, 번개장터, 중고나라의 중고 물품 시세를 비교해주는 크롬 확장 프로그램입니다. 사용자가 중고 거래 플랫폼의 상품 페이지를 방문하면 동일 상품의 시세 정보를 사이드패널에 표시합니다.</p>
+
+<h2>2. 수집하는 정보</h2>
+<p>플리렌즈는 <strong>개인정보를 수집하지 않습니다.</strong></p>
+<p>확장 프로그램이 처리하는 정보는 다음과 같으며, 모두 사용자의 브라우저 내에서만 처리됩니다:</p>
+<ul>
+  <li><strong>상품명 및 가격 정보:</strong> 사용자가 방문 중인 중고 거래 플랫폼 페이지에서 상품명과 가격을 읽어 시세 비교에 활용합니다.</li>
+  <li><strong>검색어:</strong> 사용자가 사이드패널에서 직접 입력한 검색어를 각 플랫폼 검색에 사용합니다.</li>
+  <li><strong>테마 설정:</strong> 라이트/다크/시스템 테마 선택값을 브라우저 로컬 저장소(chrome.storage.local)에 저장합니다.</li>
+</ul>
+
+<h2>3. 정보의 사용 목적</h2>
+<p>처리되는 모든 정보는 다음 목적으로만 사용됩니다:</p>
+<ul>
+  <li>당근마켓, 번개장터, 중고나라에서 동일 상품의 시세를 검색하고 비교 결과를 표시</li>
+  <li>사용자가 선택한 테마 설정을 유지</li>
+</ul>
+
+<h2>4. 데이터 저장 및 전송</h2>
+<ul>
+  <li><strong>로컬 처리:</strong> 모든 데이터는 사용자의 브라우저 내에서만 처리됩니다. 별도의 서버를 운영하지 않습니다.</li>
+  <li><strong>외부 전송 없음:</strong> 수집된 정보를 제3자에게 전송, 판매, 공유하지 않습니다.</li>
+  <li><strong>임시 캐시:</strong> 검색 결과는 브라우저 메모리에 5분간 캐시된 후 자동 삭제됩니다. 브라우저를 닫으면 모든 캐시가 즉시 삭제됩니다.</li>
+  <li><strong>영구 저장:</strong> 테마 설정값만 브라우저 로컬 저장소에 영구 저장되며, 확장 프로그램 제거 시 함께 삭제됩니다.</li>
+</ul>
+
+<h2>5. 제3자 서비스 접근</h2>
+<p>플리렌즈는 시세 비교를 위해 다음 웹사이트의 공개 검색 결과에 접근합니다:</p>
+<ul>
+  <li>당근마켓 (www.daangn.com)</li>
+  <li>번개장터 (www.bunjang.co.kr, api.bunjang.co.kr)</li>
+  <li>중고나라 (web.joongna.com)</li>
+</ul>
+<p>이 과정에서 사용자의 개인정보는 전송되지 않으며, 상품 검색어만 해당 플랫폼에 전달됩니다.</p>
+
+<h2>6. 권한 사용 안내</h2>
+<ul>
+  <li><strong>activeTab:</strong> 현재 활성 탭의 상품 정보를 읽기 위해 사용합니다.</li>
+  <li><strong>storage:</strong> 테마 설정을 저장하기 위해 사용합니다.</li>
+  <li><strong>sidePanel:</strong> 시세 비교 결과를 사이드패널에 표시하기 위해 사용합니다.</li>
+  <li><strong>tabs:</strong> 지원 사이트 방문 감지 및 사이드패널 자동 활성화를 위해 사용합니다.</li>
+  <li><strong>scripting:</strong> 확장 프로그램 설치 또는 업데이트 시, 이미 열려 있는 지원 사이트 탭에서 상품 감지 기능을 활성화하기 위해 사용합니다.</li>
+</ul>
+
+<h2>7. 아동의 개인정보 보호</h2>
+<p>플리렌즈는 만 14세 미만 아동의 개인정보를 수집하지 않으며, 의도적으로 아동을 대상으로 하지 않습니다.</p>
+
+<h2>8. 개인정보처리방침의 변경</h2>
+<p>본 방침이 변경되는 경우, 변경 사항을 이 페이지에 게시하고 시행일을 업데이트합니다. 중요한 변경이 있을 경우 확장 프로그램 업데이트 노트를 통해 안내합니다.</p>
+
+<h2>9. 문의</h2>
+<p>개인정보처리방침에 관한 문의사항이 있으시면 아래로 연락해 주세요:</p>
+<ul>
+  <li>이메일: <a href="mailto:j2kimdev@gmail.com">j2kimdev@gmail.com</a></li>
+</ul>
+
+<div class="footer">
+  <p>&copy; 2026 플리렌즈(FleaLens). All rights reserved.</p>
+</div>
+
+</body>
+</html>

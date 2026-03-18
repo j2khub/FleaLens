@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary: #F97316;
+  --color-primary-light: #fb923c;
+  --color-primary-dark: #ea580c;
+
+  --color-daangn: #FF6F0F;
+  --color-bunjang: #FF0048;
+  --color-joongna: #21C97D;
+
+  --color-good: #22c55e;
+  --color-good-bg: #f0fdf4;
+  --color-good-bg-dark: #052e16;
+
+  --color-normal: #F97316;
+  --color-normal-bg: #fff7ed;
+  --color-normal-bg-dark: #431407;
+
+  --color-expensive: #ef4444;
+  --color-expensive-bg: #fef2f2;
+  --color-expensive-bg-dark: #450a0a;
+}
+
+/* 스크롤바 */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 2px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #4b5563;
+}

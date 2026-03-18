@@ -1,0 +1,21 @@
+{
+  "name": "ce_usedteade",
+  "version": "1.0.0",
+  "description": "",
+  "main": "background.js",
+  "scripts": {
+    "build:css": "npx @tailwindcss/cli -i src/input.css -o dist/output.css --minify",
+    "watch:css": "npx @tailwindcss/cli -i src/input.css -o dist/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.2.1",
+    "tailwindcss": "^4.2.1"
+  },
+  "dependencies": {
+    "sharp": "^0.34.5"
+  }
+}
